@@ -14,7 +14,6 @@ Source:         http://www.cpan.org/modules/by-module/SVN/%{module}-%{version}.t
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(HTML::Parser)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This class may be used for sending email messages for Subversion repository
