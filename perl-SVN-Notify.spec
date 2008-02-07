@@ -1,6 +1,6 @@
 %define module  SVN-Notify
 %define name    perl-%{module}
-%define version 2.66
+%define version 2.67
 %define release %mkrel 1
 
 Name:           %{name}
