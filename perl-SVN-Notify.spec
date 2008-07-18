@@ -13,6 +13,7 @@ Url:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/SVN/%{module}-%{version}.tar.bz2
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(HTML::Parser)
+BuildRequires:  sendmail-command
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
