@@ -1,5 +1,5 @@
 %define upstream_name    SVN-Notify
-%define upstream_version 2.79
+%define upstream_version 2.80
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,11 +9,12 @@ Summary:    Subversion activity notification
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/SVN/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    http://www.cpan.org/modules/by-module/SVN/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(HTML::Parser)
 BuildRequires:  sendmail-command
+
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
