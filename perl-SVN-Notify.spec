@@ -1,22 +1,21 @@
 %define upstream_name    SVN-Notify
-%define upstream_version 2.81
+%define upstream_version 2.83
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    1
 
 Summary:    Subversion activity notification
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/SVN/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/SVN/SVN-Notify-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(HTML::Parser)
 BuildRequires:  sendmail-command
 
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This class may be used for sending email messages for Subversion repository
@@ -39,15 +38,10 @@ used in subversion post-commit scripts.
 ./Build test
 
 %install
-rm -rf %{buildroot}
 ./Build install destdir=%{buildroot}
 
-%clean 
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
-%doc Changes README
+%doc Changes
 %{perl_vendorlib}/SVN
 %{_mandir}/*/*
 %{_bindir}/svnnotify
@@ -148,10 +142,10 @@ rm -rf %{buildroot}
 - better source URL
 - drop useless buildrequires
 
-* Tue Apr 11 2006 Nicolas Lécureuil <neoclust@mandriva.org> 2.57-1mdk
+* Tue Apr 11 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 2.57-1mdk
 - New release 2.57
 
-* Thu Apr 06 2006 Nicolas Lécureuil <neoclust@mandriva.org> 2.56-1mdk
+* Thu Apr 06 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 2.56-1mdk
 - New release 2.56
 
 * Mon Mar 06 2006 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 2.54-1mdk
@@ -169,12 +163,13 @@ rm -rf %{buildroot}
 - spec cleanup
 - fix directory ownership
 
-* Tue Oct 04 2005 Nicolas Lécureuil <neoclust@mandriva.org> 2.49-3mdk
+* Tue Oct 04 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 2.49-3mdk
 - Fix BuildRequires
 
-* Sat Oct 01 2005 Nicolas Lécureuil <neoclust@mandriva.org> 2.49-2mdk
+* Sat Oct 01 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 2.49-2mdk
 - Buildrequires fix
 
 * Sat Oct 01 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 2.49-1mdk
 - Initial Mandriva release
+
 
