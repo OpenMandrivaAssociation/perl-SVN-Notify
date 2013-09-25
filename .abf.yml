@@ -1,4 +1,5 @@
 removed_sources:
   SVN-Notify-2.81.tar.gz: f8d07ecc145387a5c24400c5c51278e1c6c432cd
-sources:
   SVN-Notify-2.83.tar.gz: 6bc4333cb209c09d2875fbbb412be167cd749d45
+sources:
+  SVN-Notify-2.84.tar.gz: 1d9a947aac2fbf1d8af95b151609733ff843a2dc

@@ -1,5 +1,5 @@
 %define upstream_name    SVN-Notify
-%define upstream_version 2.83
+%define upstream_version 2.84
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -171,5 +171,6 @@ used in subversion post-commit scripts.
 
 * Sat Oct 01 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 2.49-1mdk
 - Initial Mandriva release
+
 
 
